@@ -1,0 +1,342 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* font-family: 'Rubik, sans-serif'; */
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+
+/*============================================ Start Home Style  =================================== */
+
+/* start header */
+.top-nav {
+    background-color:#fcf1ff;
+    padding: 5px 0px;
+}
+.sign{
+    margin-top: 5px;
+}
+.sign p a {
+    color:#000!important;
+    /* padding: 10px 0px 0px 0px; */
+}
+.sign p a i{
+   color: #d892ec;
+}
+.logo img{
+    width: 114px;
+    height: 36px;
+    /* transform: scale(.5); */
+}
+
+
+/**************************** start  slider  **************/
+
+.carousel-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 500px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+
+    
+}
+
+.slide1{
+    
+    background-image: url("../images/s1.jpg");
+}
+
+.slide2{
+        background-image: url("../images/s2.jpg");
+
+}
+.slide3{
+        background-image: url("../images/s4.jpg");
+
+}
+
+
+.sliderBtn {
+    border:none;
+    padding: 10px 30px;
+    border-radius:26px;
+    background-color: white;
+    
+    
+}
+.sliderBtn:hover{
+    background-color:#e65540; 
+}
+
+.carousel-caption{
+
+    bottom: 30%;
+}
+
+.carousel-caption p , .carousel-caption h1{
+    color: #000;
+}
+
+
+.carousel-caption h1{
+    font-size: 80px;
+    /* color: white; */
+    text-transform:uppercase;
+    margin-bottom: 35px;
+
+}
+
+.carousel-caption h1 span{
+
+    border-bottom: 5px solid #fff;
+    padding-bottom: 0px;
+    
+}
+
+.carousel-caption p{
+    font-size:20px; 
+}
+
+/**************************** end slider  **************/
+
+
+/********************** start about section ***************************/
+
+.about-content .note{
+    font-size: 16px;
+    color: #efa2c1;
+    font-style: italic;
+    margin-bottom: 0;
+    line-height: 27px;
+    margin-top: -5px;
+}
+.about-content h3{
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.text-parag {
+    font-family: 'Lato', sans-serif;
+    color: #666;
+    line-height: 26px;
+    text-align: justify;
+    font-size: 15px;
+}
+.about-btn{
+    border:none;
+    padding: 10px 30px;
+    border-radius:35px;
+    border:2px solid black;
+    color: black;
+    transition: background-color .5s;
+    background-color:white;
+    
+}
+.about-btn:hover{
+    background-color:black;
+    
+    color: #fff;
+   
+}
+
+
+/************************ Start items slider ***********************/
+
+.parent{
+    position: relative;
+    overflow: hidden;
+    /* margin: 30px auto*/;
+
+}
+.upBtn{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    padding: 15px 40px;
+}
+.upBtn:hover{
+    background-color:#e65540;
+    color: white;
+}
+.parent img:hover{
+    transform:scale(1.2,1.2);
+    transition: all 1s ease-in-out;
+}
+
+/************************ End items slider ***********************/
+
+/*************** start our products section ************************/
+
+
+
+@keyframes wobble { 
+    0% { transform: translateX(0%); } 
+    15% { transform: translateX(-25%) rotate(-5deg); } 
+    30% { transform: translateX(20%) rotate(3deg); } 
+    45% { transform: translateX(-15%) rotate(-3deg); } 
+    60% { transform: translateX(10%) rotate(2deg); } 
+    75% { transform: translateX(-5%) rotate(-1deg); } 
+    100% { transform: translateX(0%); } 
+ }
+.bell img:hover {
+    animation-name: wobble;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+.prod-title{
+    font-family: 'Lobster', cursive;
+    color: #e33d3d;
+    margin-bottom: 40px;
+    font-size: 45px;
+    letter-spacing: 1.125px;
+    text-align: center;
+
+              }
+
+
+.gallary,.gallary .active {
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.gallary:hover,
+.gallary .active:hover {
+    background: rgb(79, 184, 170)!important;
+}
+
+.gallary a {
+    color: rgb(183, 183, 183);
+}
+
+.gallary:hover.nav-item a {
+    color: white !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #e84455!important;
+}
+.gift-imgs{
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+.replaced-img{
+    position: absolute;
+    bottom:100%;
+    left: 0;
+    transition: all .5s ease-in-out;
+
+    /* opacity: 0;
+    visibility: hidden; */
+}
+.gift-imgs:hover .replaced-img{
+       bottom:0
+}
+.gift-detail {
+    text-align: center;
+}
+.gift-detail a{
+    color: #666;
+            }
+
+.gift-detail h3{
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 20px 0px;
+}
+.product-price{
+    font-size: 18px;
+    font-family: "Lobster",cursive;
+    font-weight: 400;
+    color: #e33d3d;
+}
+
+/******************************* end our products section ************************/
+
+
+/******************************* Start count down section ************************/
+.count-down{
+    background-image: url(../images/h1-bg.jpg);
+    background-size: 100% 100%;
+    color: #f1f1f1;
+    font-family: "Lobster",cursive;
+
+
+}
+
+.counter-content h3{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.counter-content h2{
+    font-size: 55px;
+}
+
+
+
+
+
+
+/******************************* end count down section ************************/
+
+
+
+
+
+@media(max-width:425px)
+{
+    .counter-content h2 {
+        font-size: 35px;
+    }
+
+}
+
+@media(max-width:320px)
+{
+    .counter-content h2 {
+        font-size: 30px;
+    }
+    .counter-content #demo{
+        font-size: 16px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
