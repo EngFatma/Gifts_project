@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+
     <link rel="stylesheet" href="assets/css/index_style.css">
 </head>
 <body>
@@ -99,11 +101,11 @@
                   <div class="row">
                       <div class="col-md-4 d-flex align-items-center">
                           <div class="about-img ">
-                               <img class="img-fluid" src="assets/images/single-img.png" alt="photo">
+                               <img class="img-fluid wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s" src="assets/images/single-img.png" alt="photo">
                           </div><!--./about-img-->
                       </div><!--./col-md-4-->
                       <div class="col-md-7 offset-md-1">
-                          <div class="about-content text-left">
+                          <div class="about-content text-left wow slideInRight" data-wow-duration="0s" data-wow-delay="1s">
                               <img class="img-fluid mb-5" src="assets/images/before.png">
 
                               <p class="note">About Gift Store</p>
@@ -848,13 +850,225 @@
     </section>
 
     <!-- end count down section  -->
-  
+
+    
+     <!-- Start testimonial -->
+    <section id="testimonials" class="py-3">
+
+        <div class="container">
+
+            <div class="title d-flex justify-content-center  align-items-center">
+                <h2>TESTIMONIALS</h2>
+                <h3>TESTIMONIALS</h3>
+            </div> <!--./title -->
+
+            <div class="bd-example text-center">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+
+                    <div class="carousel-inner mt-4">
+
+                         <!--carousel-item  -->
+                        <div class="carousel-item active">
+
+                            <img class="rounded-circle" src="assets/images/test1.jpg">
+
+                            <h5>Robin Perty</h5>
+                            <h6>Senior Desinger</h6>
+
+
+                            <p class="p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget est
+                                sit amet sapien congue tristique. Integer mollis auctor ultrices. Praesent vitae dapibus
+                                elit. Sed sit amet tellus magna.</p>
+                        </div>
+
+
+                        <!--carousel-item  -->
+                        <div class="carousel-item">
+                            <img class="rounded-circle" src="assets/images/t2.jpg">
+
+                            <h5>Robin Perty</h5>
+                            <h6>Senior Desinger</h6>
+
+
+                            <p class="p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget est
+                                sit amet sapien congue tristique. Integer mollis auctor ultrices. Praesent vitae dapibus
+                                elit. Sed sit amet tellus magna.</p>
+                        </div>
+                               <!--carousel-item  -->
+                        <div class="carousel-item">
+                            <img class="rounded-circle" src="assets/images/t3.jpg">
+
+                            <h5>Robin Perty</h5>
+                            <h6>Senior Desinger</h6>
+
+
+                            <p class="p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget est
+                                sit amet sapien congue tristique. Integer mollis auctor ultrices. Praesent vitae dapibus
+                                elit. Sed sit amet tellus magna.</p>
+
+                        </div>
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol> <!-- ./carousel-indicators -->
+
+                </div> <!-- ./carousel  -->
+            </div><!-- ./bd-example  -->
+
+        </div> <!-- container -->
+    </section>
+    <!-- End testimonial -->
+
+    <!-- start Blog section  -->
+       <section class="blog my-5 py-4 d-none d-md-block">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <div class="products-header text-center">
+        
+                                 <div class="bell mb-3">
+                                     <img class="img-fluid" src="assets/images/bell.jpg" alt="bell img">
+                                 </div><!-- ./bell -->
+                                 <h4 class="prod-title">Latest Blog</h4>
+    
+                            </div> <!-- ./products-header-->
+                         </div><!-- ./col-md-12 -->
+
+                        <!-- item-->
+                        <div class="col">
+                            <!-- gallaryImg -->
+                            <div class="gallaryImg">
+        
+                                <a data-fancybox="gallery" href="assets/images/blog1.jpg">
+                                    <img src="assets/images/blog1.jpg" class="img-fluid">
+                                </a>
+                            </div> <!-- gallaryImg -->
+                        </div> 
+                          <!-- item-->
+                          <div class="col">
+                            <!-- gallaryImg -->
+                            <div class="gallaryImg">
+        
+                                <a data-fancybox="gallery" href="assets/images/blog2.jpg">
+                                    <img src="assets/images/blog2.jpg" class="img-fluid">
+                                </a>
+                            </div> <!-- gallaryImg -->
+                        </div> 
+                          <!-- item-->
+
+                          <div class="col">
+                            <!-- gallaryImg -->
+                            <div class="gallaryImg">
+        
+                                <a data-fancybox="gallery" href="assets/images/blog3.jpg">
+                                    <img src="assets/images/blog3.jpg" class="img-fluid">
+                                </a>
+                            </div> <!-- gallaryImg -->
+                        </div> 
+                          <!-- item-->
+
+                          <div class="col">
+                            <!-- gallaryImg -->
+                            <div class="gallaryImg">
+        
+                                <a data-fancybox="gallery" href="assets/images/blog4.jpg">
+                                    <img src="assets/images/blog4.jpg" class="img-fluid">
+                                </a>
+                            </div> <!-- gallaryImg -->
+                        </div> 
+                          <!-- item-->
+                          <div class="col">
+                            <!-- gallaryImg -->
+                            <div class="gallaryImg">
+        
+                                <a data-fancybox="gallery" href="assets/images/blog2.jpg">
+                                    <img src="assets/images/blog2.jpg" class="img-fluid">
+                                </a>
+                            </div> <!-- gallaryImg -->
+                        </div> 
+                          
+                           
+                    </div><!-- ./row -->
+                </div> <!-- ./container -->
+       </section>
+    <!-- End Blog section  -->
+
+    <!-- start footer  -->
+     <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                  <div class="col-md-3 mb-3">
+                      <!-- footer description -->
+                      <div class="footer-desc text-left">
+                            <img class="img-fluid mb-2" src="assets/images/logo.png" >
+                            <p >Etiam consequat sem ullamcorper, euismod metus sit amet, tristique justo. Vestibulum mattis, nisi ut faucibus commodo, risus ex commodo.</p>
+                            <div class="social my-1">
+
+                                <i class="fab fa-instagram instagram "></i>
+                                <i class="fab fa-facebook-f facebook "></i>
+                                <i class="fab fa-twitter twitter "></i>
+                                <i class="fab fa-whatsapp whatsapp "></i>
+                                <i class="fab fa-linkedin linkedin "></i>
+        
+                            </div> <!-- footer social -->
+                        </div> <!-- ./footer description -->
+                  </div><!-- ./col-md-3 -->
+                  <div class="col-md-3 mb-3">
+                      <div class="quick">
+                       <h4 class="footer_title"> Quick Links </h4>
+                        <p> <a href="#"> Valentine's Day</a></p>
+                        <p> <a href="#"> Gifts For Him </a></p>
+                        <p> <a href="#"> Gifts For Her </a></p>
+                        <p> <a href ="#"> Kids Gifts </a> </p>
+                        <p> <a href ="#"> Birthday Gifts </a></p>
+                      </div><!-- ./quick -->
+                  </div><!-- ./col-md-3 -->
+                  <div class="col-md-3 mb-3">
+                      <div class="company">
+                          <h4 class="footer_title">company</h4>
+                          <p> <a href ="#">About Us </a></p>
+                          <p> <a href = "#">Blog </a></p>
+                          <p>  <a href = "#">Location </a></p>
+
+                      </div>
+                  </div><!-- ./col-md-3 -->
+                  <div class="col-md-3">
+                       <div class="footer-contact">
+                            <h4 class="footer_title">contact us</h4>
+                            <p>6 El Tahreer Street ( El Giza‎ )‏</p>
+                            <h5>+(048)34878785</h5>
+                            <p>routeegypt@gmail.com</p>
+                       </div>
+                  </div><!-- ./col-md-3 -->
+            </div> <!-- ./row -->
+        </div> <!-- ./container -->
+     </footer>
+
+    <!-- end footer  -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="copyright text-center">
+                    <p>copyright &copy; 2020 <span>ROUTE</span> all rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+
 
 
 

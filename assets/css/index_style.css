@@ -40,7 +40,7 @@ a,a:hover{
 
 /**************************** start  slider  **************/
 
-.carousel-item{
+.slider .carousel-item{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,17 +288,225 @@ a,a:hover{
 .counter-content h2{
     font-size: 55px;
 }
-
-
-
-
-
-
 /******************************* end count down section ************************/
 
 
+/********************************* Start testimonial carousel *********************************/
+.title{
+    position: relative;
+    font-weight: 800;
+}
+.title h2{
+      color: #f1f1f1; 
+      font-size: 5rem; 
+      letter-spacing: 3px;
+      
+}
+.title h3{
+       position: absolute;
+       letter-spacing: 5px;
+       font-size: 2.5rem;
+       margin-top: .25rem;
+}
+#testimonials
+{
+    font-family: 'Segoe UI light', Tahoma, Verdana, sans-serif;
+}
+
+#testimonials .carousel-indicators
+{
+    position: static;
+}
+#testimonials .carousel-indicators li
+{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+}
 
 
+#testimonials .carousel-item img
+{
+    width: 85px;
+   
+}
+
+
+#testimonials .carousel-item h6
+{
+    color: #555;
+    position: relative;
+}
+#testimonials .carousel-item h6::after
+{
+
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 47%;
+    width:6%;
+    height: 2px;
+    background-color: #ff206e;
+    transition: width 1s , left 1s;
+    
+}
+
+
+#testimonials .carousel-item:hover  h6::after
+{
+    width:10%;
+    left: 45%;
+}
+
+
+/********************************** end testimonial carousel ************************************/
+
+
+
+/************************************** fancy box  ***********************************/
+.gallaryImg{
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+.gallaryImg img{
+
+    transition: transform .5s;
+}
+.gallaryImg img:hover{
+    transform: scale(1.2);
+    
+}
+
+
+/********************************** start footer ************************/
+footer{
+    /* background-image: linear-gradient(to right top, #6b1823, #892535, #a83249, #c8405e, #e94e76); */
+   
+}
+.footer-desc img{
+    margin-top: -28px;
+}
+.footer-desc p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    padding-right: 40px;
+}
+.social {
+    font-size: 18px;
+    color: #666
+}
+
+.social i {
+    padding-right: 12px;
+    transition: transform .5s ease-in-out;
+}
+.social i:hover{
+    transform: scale(1.2);
+}
+
+.social i.instagram:hover {
+    color: #2C6A93!important;
+}
+
+.social i.facebook:hover {
+    color: #0056b3!important;
+}
+
+.social i.twitter:hover {
+    color: #1489ed!important;
+}
+
+.social i.whatsapp:hover {
+    color: darkgreen!important;
+}
+
+.social i.linkedin:hover {
+    color: #04669A!important;
+}
+.footer_title{
+    color: #18191c;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+    font-family: "Lobster",cursive;
+}
+footer a , footer p{
+    color: #999;
+    cursor: pointer;
+}
+footer p {
+    margin-top: 20px;
+}
+
+.footer-contact h5{
+    font-size: 30px;
+    line-height: 30px;
+    font-family: "Lobster",cursive;
+    margin: 20px 0;
+    color:#e33d3d;
+
+}
+
+/********* copy right ********/
+.copyright {
+    position: relative;
+    padding: 10px 0px;
+    font-size: .875rem;
+    color: #666;
+    font-weight: 400;
+}
+.copyright:before {
+    content: "";
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    height: 1px;
+    display: block!important;
+    top: 0;
+    background: #eee;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+
+                    }
+
+    .copyright span{
+        color:#e33d3d;
+
+    }
+
+
+
+
+
+/************************************* end footer ***************************/
+@media(max-width:768px){
+    .social {
+        font-size: 16px;
+    }     
+    
+.footer-contact h5{
+    font-size: 22px; 
+
+}
+
+
+
+@media(max-width:425px){
+        /* title */
+    .title h2 {
+        font-size: 3rem;
+    }
+
+    .title h3 {
+        font-size: 1.5rem;
+    }
+}
 
 @media(max-width:425px)
 {
@@ -315,6 +523,14 @@ a,a:hover{
     }
     .counter-content #demo{
         font-size: 16px;
+    }
+        /* title */
+    .title h2 {
+        font-size: 2rem;
+    }
+
+    .title h3 {
+        font-size: 1rem;
     }
 
 
